@@ -1,1 +1,114 @@
+body{
+    background-color: black;
+}
 
+header{
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(107, 186, 186);
+    list-style: none;
+}
+
+main{
+    background-color: rgb(15, 58, 69);
+}
+
+header nav ul{
+    padding: 2px;
+}
+
+#exp{
+    padding-left: 5px;
+}
+
+main{
+    display: block;
+}
+
+.tarjeta img{
+    width: 70%;
+}
+
+section{
+    text-align: center;
+}
+
+.sec-explorar{
+    padding-left: 32px;
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+    .galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    main{
+        background-color:rgb(99, 68, 128);
+    }
+
+    .tarjeta img{
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    section h1{
+        text-align: center;
+    }
+
+    .tarjeta h2{
+        border: 4px;
+        border-color: black;
+        border-style:outset;
+    }
+
+    header{
+        background-color: rgb(181, 153, 208);
+        display: flex;
+        justify-content: center;
+    }
+
+    .barra-inicio{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        list-style: none;
+        justify-content: center;
+    }
+
+    .barra-inicio li{
+        border: 3px;
+        border-style: dashed;
+        border-color: black;
+        padding: 10px;
+    }
+
+    .sec-explorar{
+        display: none;
+    }
+}
+
+/*escritorio*/
+@media screen and (min-width: 1280px){
+    header{
+        background-color: rgb(188, 109, 109);
+    }
+
+    main{
+        background-color: rgb(146, 17, 17);
+    }
+
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tarjeta img{
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+}
